@@ -8,6 +8,8 @@
     <title>Путешествие по Европе</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2">
     <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2">
     <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2">
   </head>
@@ -43,16 +45,16 @@
 
 
     <main>
-      <section>
-        <h2>
+      <section class="promo">
+        <h2 class="promo__header">
           Места посещения
         </h2>
-        <p>
+        <p class="promo__text">
           Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
         </p>
-        <ul>
-          <li>
-            <a class="catalog-item__link-image" href="#" aria-label="карточка выбора страны">
+        <ul class="promo__list">
+          <li class="promo__item">
+            <a class="promo__link-image" href="#" aria-label="карточка выбора страны">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/aleyna-rentz-desktop@1x.webp 1x, img/aleyna-rentz-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/aleyna-rentz-tablet@1x.webp 1x, img/aleyna-rentz-tablet@2x.webp 2x">
@@ -60,13 +62,13 @@
 
                 <source media="(min-width: 1024px)" srcset="img/aleyna-rentz-desktop@1x.jpg 1x, img/aleyna-rentz-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/aleyna-rentz-tablet@1x.jpg 1x, img/aleyna-rentz-tablet@2x.jpg 2x">
-                <img class="catalog-item__image" src="img/aleyna-rentz-mobile@1x.jpg" srcset="img/aleyna-rentz-mobile@2x.jpg" width="288" height="450" alt="Греция">
+                <img class="promo__image" src="img/aleyna-rentz-mobile@1x.jpg" srcset="img/aleyna-rentz-mobile@2x.jpg" width="288" height="450" alt="Греция Монастырь Святой Троицы Метеора">
               </picture>
-              <p class="">Греция</p>
+              <p class="promo__text-card">Греция</p>
             </a>
           </li>
-          <li>
-            <a class="catalog-item__link-image" href="#" aria-label="карточка выбора страны">
+          <li  class="promo__item">
+            <a class="promo__link-image" href="#" aria-label="карточка выбора страны">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/polina-rytova-desktop@1x.webp 1x, img/polina-rytova-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/polina-rytova-tablet@1x.webp 1x, img/-tablet@2x.webp 2x">
@@ -74,13 +76,13 @@
 
                 <source media="(min-width: 1024px)" srcset="img/polina-rytova-desktop@1x.jpg 1x, img/polina-rytova-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/polina-rytova-tablet@1x.jpg 1x, img/polina-rytova-tablet@2x.jpg 2x">
-                <img class="catalog-item__image" src="img/polina-rytova-mobile@1x.jpg" srcset="img/polina-rytova-mobile@2x.jpg" width="288" height="450" alt="Албания">
+                <img class="promo__image" src="img/polina-rytova-mobile@1x.jpg" srcset="img/polina-rytova-mobile@2x.jpg" width="288" height="450" alt="Албания аэрофото  берега моря, причалов с домами">
               </picture>
-              <p class="">Албания</p>
+              <p class="promo__text-card">Албания</p>
             </a>
           </li>
-          <li>
-            <a class="catalog-item__link-image" href="#" aria-label="карточка выбора страны">
+          <li  class="promo__item">
+            <a class="promo__link-image" href="#" aria-label="карточка выбора страны">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/milana-jovanov-desktop@1x.webp 1x, img/milana-jovanov-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/milana-jovanov-tablet@1x.webp 1x, img/milana-jovanov-tablet@2x.webp 2x">
@@ -88,13 +90,13 @@
 
                 <source media="(min-width: 1024px)" srcset="img/milana-jovanov-desktop@1x.jpg 1x, img/milana-jovanov-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/milana-jovanov-tablet@1x.jpg 1x, img/milana-jovanov-tablet@2x.jpg 2x">
-                <img class="catalog-item__image" src="img/milana-jovanov-mobile@1x.jpg" srcset="img/milana-jovanov-mobile@2x.jpg" width="288" height="450" alt="Македония">
+                <img class="promo__image" src="img/milana-jovanov-mobile@1x.jpg" srcset="img/milana-jovanov-mobile@2x.jpg" width="288" height="450" alt="Македония Церковь Святого Иоанна">
               </picture>
-              <p class="">Македония</p>
+              <p class="promo__text-card">Македония</p>
             </a>
           </li>
-          <li>
-            <a class="catalog-item__link-image" href="#" aria-label="карточка выбора страны">
+          <li  class="promo__item">
+            <a class="promo__link-image" href="#" aria-label="карточка выбора страны">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/hanna-bezsonova-desktop@1x.webp 1x, img/hanna-bezsonova-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/hanna-bezsonova-tablet@1x.webp 1x, img/hanna-bezsonova-tablet@2x.webp 2x">
@@ -102,13 +104,13 @@
 
                 <source media="(min-width: 1024px)" srcset="img/hanna-bezsonova-desktop@1x.jpg 1x, img/hanna-bezsonova-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/hanna-bezsonova-tablet@1x.jpg 1x, img/hanna-bezsonova-tablet@2x.jpg 2x">
-                <img class="catalog-item__image" src="img/hanna-bezsonova-mobile@1x.jpg" srcset="img/hanna-bezsonova-mobile@2x.jpg" width="288" height="450" alt="Черногория">
+                <img class="promo__image" src="img/hanna-bezsonova-mobile@1x.jpg" srcset="img/hanna-bezsonova-mobile@2x.jpg" width="288" height="450" alt="Дурмитор Горный массив в Черногории">
               </picture>
-              <p class="">Черногория</p>
+              <p class="promo__text-card">Черногория</p>
             </a>
           </li>
-          <li>
-            <a class="catalog-item__link-image" href="#" aria-label="карточка выбора страны">
+          <li  class="promo__item">
+            <a class="promo__link-image" href="#" aria-label="карточка выбора страны">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/robert-thiemann-desktop@1x.webp 1x, img/robert-thiemann-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/robert-thiemann-tablet@1x.webp 1x, img/robert-thiemann-tablet@2x.webp 2x">
@@ -116,9 +118,9 @@
 
                 <source media="(min-width: 1024px)" srcset="img/robert-thiemann-desktop@1x.jpg 1x, img/robert-thiemann-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/robert-thiemann-tablet@1x.jpg 1x, img/robert-thiemann-tablet@2x.jpg 2x">
-                <img class="catalog-item__image" src="img/robert-thiemann-mobile@1x.jpg" srcset="img/robert-thiemann-mobile@2x.jpg" width="288" height="450" alt="Хорватия">
+                <img class="promo__image" src="img/robert-thiemann-mobile@1x.jpg" srcset="img/robert-thiemann-mobile@2x.jpg" width="288" height="450" alt="Хорватия пещерное озеро с сталактитами сталагмитами">
               </picture>
-              <p class="">Хорватия</p>
+              <p class="promo__text-card">Хорватия</p>
             </a>
           </li>
         </ul>
