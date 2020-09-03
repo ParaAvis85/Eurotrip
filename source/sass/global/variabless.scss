@@ -1,8 +1,17 @@
 // цвета
 $red: #fe7865;
 $orange: #f17d4b;
-$black: #141517;
+$black: #000000;;
+$black-tel: #141517;
+$black-70: rgba(44, 46, 63, 0.7);
 $grey: #2c2e3f;
+$grey-30: rgba(44, 46, 63, 0.3);
+$grey-70: rgba(44, 46, 63, 0.7);
+$white: #ffffff;
+$shadow: rgba(41, 54, 66, 0.1);
+$footer-country: rgba(20, 21, 23, 0.5);
+$economy: rgba(20, 21, 23, 0.7);
+
 
 // шрифты
 
@@ -11,9 +20,9 @@ $font-other: "Poppins", sans-serif;
 
 // размеры
 $mobile-width: 320px;
-$only-mobile-width:767px;
+$only-mobile-width: 767px;
 $tablet-width: 768px;
-$only-tablet-width:1023px;
+$only-tablet-width: 1023px;
 $desktop-width: 1024px;
 
 // разрешение экрана
