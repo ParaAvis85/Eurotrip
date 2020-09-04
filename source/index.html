@@ -35,26 +35,38 @@
             <a class="site-list__link site-list__link--tel" href="tel:+749978468446">Тел: +7 (499)-784-684-46</a>
           </li>
         </ul>
-          <div class="main-nav__wrapper">
-            <h1 class="main-nav__title">Путешествие по Европе</h1>
-            <p class="main-nav__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-            <a class="main-nav__button">смотреть тур</a>
-          </div>
       </nav>
     </header>
 
 
-    <main>
+    <main class="page-main">
+
       <section class="promo">
-        <h2 class="promo__title">
+        <div class="container">
+          <div class="promo__wrapper">
+            <div class="promo__text-wrapper">
+              <h1 class="promo__title">Путешествие по Европе</h1>
+              <p class="promo__text">
+                В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
+                природы.
+              </p>
+              <a class="promo__button button" href="#countries">смотреть тур</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="tour">
+        <h2 class="tour__title">
           Места посещения
         </h2>
-        <p class="promo__text">
+        <p class="tour__text">
           Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
         </p>
-        <ul class="promo__list">
-          <li class="promo__item">
-            <a class="promo__link-image" href="#" aria-label="карточка выбора страны">
+        <ul class="tour__list">
+          <li class="tour__item">
+            <a class="tour__link-image" href="#" aria-label="карточка выбора страны">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/greece-tablet@1x.webp 1x, img/greece-tablet@2x.webp 2x">
@@ -62,13 +74,13 @@
 
                 <source media="(min-width: 1024px)" srcset="img/greece-desktop@1x.jpg 1x, img/greece-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/greece-tablet@1x.jpg 1x, img/greece-tablet@2x.jpg 2x">
-                <img class="promo__image" src="img/greece-mobile@1x.jpg" srcset="img/greece-mobile@2x.jpg" width="288" height="450" alt="Греция Монастырь Святой Троицы Метеора">
+                <img class="tour__image" src="img/greece-mobile@1x.jpg" srcset="img/greece-mobile@2x.jpg" width="288" height="450" alt="Греция Монастырь Святой Троицы Метеора">
               </picture>
-              <p class="promo__text-card">Греция</p>
+              <p class="tour__text-card">Греция</p>
             </a>
           </li>
-          <li  class="promo__item">
-            <a class="promo__link-image" href="#" aria-label="карточка выбора страны">
+          <li  class="tour__item">
+            <a class="tour__link-image" href="#" aria-label="карточка выбора страны">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/albany-desktop@1x.webp 1x, img/albany-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/albany-tablet@1x.webp 1x, img/albany-tablet@2x.webp 2x">
@@ -76,13 +88,13 @@
 
                 <source media="(min-width: 1024px)" srcset="img/albany-desktop@1x.jpg 1x, img/albany-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/albany-tablet@1x.jpg 1x, img/albany-tablet@2x.jpg 2x">
-                <img class="promo__image" src="img/albany-mobile@1x.jpg" srcset="img/albany-mobile@2x.jpg" width="288" height="450" alt="Албания аэрофото  берега моря, причалов с домами">
+                <img class="tour__image" src="img/albany-mobile@1x.jpg" srcset="img/albany-mobile@2x.jpg" width="288" height="450" alt="Албания аэрофото  берега моря, причалов с домами">
               </picture>
-              <p class="promo__text-card">Албания</p>
+              <p class="tour__text-card">Албания</p>
             </a>
           </li>
-          <li  class="promo__item">
-            <a class="promo__link-image" href="#" aria-label="карточка выбора страны">
+          <li  class="tour__item">
+            <a class="tour__link-image" href="#" aria-label="карточка выбора страны">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/macedonia-desktop@1x.webp 1x, img/macedonia-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/macedonia-tablet@1x.webp 1x, img/macedonia-tablet@2x.webp 2x">
@@ -90,13 +102,13 @@
 
                 <source media="(min-width: 1024px)" srcset="img/macedonia-desktop@1x.jpg 1x, img/macedonia-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/macedonia-tablet@1x.jpg 1x, img/macedonia-tablet@2x.jpg 2x">
-                <img class="promo__image" src="img/macedonia-mobile@1x.jpg" srcset="img/macedonia-mobile@2x.jpg" width="288" height="450" alt="Македония Церковь Святого Иоанна">
+                <img class="tour__image" src="img/macedonia-mobile@1x.jpg" srcset="img/macedonia-mobile@2x.jpg" width="288" height="450" alt="Македония Церковь Святого Иоанна">
               </picture>
-              <p class="promo__text-card">Македония</p>
+              <p class="tour__text-card">Македония</p>
             </a>
           </li>
-          <li  class="promo__item">
-            <a class="promo__link-image" href="#" aria-label="карточка выбора страны">
+          <li  class="tour__item">
+            <a class="tour__link-image" href="#" aria-label="карточка выбора страны">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/montenegrin-desktop@1x.webp 1x, img/montenegrin-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/montenegrin-tablet@1x.webp 1x, img/montenegrin-tablet@2x.webp 2x">
@@ -104,13 +116,13 @@
 
                 <source media="(min-width: 1024px)" srcset="img/montenegrin-desktop@1x.jpg 1x, img/montenegrin-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/montenegrin-tablet@1x.jpg 1x, img/montenegrin-tablet@2x.jpg 2x">
-                <img class="promo__image" src="img/montenegrin-mobile@1x.jpg" srcset="img/montenegrin-mobile@2x.jpg" width="288" height="450" alt="Дурмитор Горный массив в Черногории">
+                <img class="tour__image" src="img/montenegrin-mobile@1x.jpg" srcset="img/montenegrin-mobile@2x.jpg" width="288" height="450" alt="Дурмитор Горный массив в Черногории">
               </picture>
-              <p class="promo__text-card">Черногория</p>
+              <p class="tour__text-card">Черногория</p>
             </a>
           </li>
-          <li  class="promo__item">
-            <a class="promo__link-image" href="#" aria-label="карточка выбора страны">
+          <li  class="tour__item">
+            <a class="tour__link-image" href="#" aria-label="карточка выбора страны">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/croatia-desktop@1x.webp 1x, img/croatia-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/croatia-tablet@1x.webp 1x, img/croatia-tablet@2x.webp 2x">
@@ -118,9 +130,9 @@
 
                 <source media="(min-width: 1024px)" srcset="img/croatia-desktop@1x.jpg 1x, img/croatia-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/croatia-tablet@1x.jpg 1x, img/croatia-tablet@2x.jpg 2x">
-                <img class="promo__image" src="img/croatia-mobile@1x.jpg" srcset="img/croatia-mobile@2x.jpg" width="288" height="450" alt="Хорватия пещерное озеро с сталактитами сталагмитами">
+                <img class="tour__image" src="img/croatia-mobile@1x.jpg" srcset="img/croatia-mobile@2x.jpg" width="288" height="450" alt="Хорватия пещерное озеро с сталактитами сталагмитами">
               </picture>
-              <p class="promo__text-card">Хорватия</p>
+              <p class="tour__text-card">Хорватия</p>
             </a>
           </li>
         </ul>
