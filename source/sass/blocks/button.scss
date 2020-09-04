@@ -1,0 +1,27 @@
+.button {
+  @include text(12px, 15px);
+  color: $white;
+  background-color: $red;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  padding: 30px 40px;
+
+  @media (max-width: $only-tablet-width) {
+    @include text(10px, 12px);
+    font-weight: 500;
+    padding: 20px 30px;
+    min-width: 250px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    min-width: 288px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $orange;
+  }
+}

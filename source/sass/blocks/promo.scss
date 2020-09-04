@@ -1,0 +1,10 @@
+.promo__title {
+  @include text (55px, 80px);
+  font-weight: 600;
+  color: $white;
+}
+
+.promo__text {
+  @include text (16px, 28px);
+  color: $white;
+}
