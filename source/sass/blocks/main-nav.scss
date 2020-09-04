@@ -1,14 +1,12 @@
-.site-list__link {
-  font-family: $font-main;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: $black-tel;
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  align-items: center;
+}
 
-  &--tel {
-    font-size: 18px;
-    line-height: 32px;
-    text-decoration-line: underline;
-    color: $red;
-  }
+.main-nav__list {
+  @include no-list();
+  display: flex;
+  padding-right: 20px;
 }
