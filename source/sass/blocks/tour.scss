@@ -1,0 +1,28 @@
+.tour__title {
+  @include text(55px, 80px);
+  color: $grey;
+  font-weight: 600;
+}
+
+.tour__text {
+  @include text(16px, 28px);
+  color: $black-70;
+  font-weight: 600;
+}
+
+.tour__list {
+  @include no-list();
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tour__image {
+  width: 350px;
+  height: 430px;
+}
+
+.tour__text-card {
+  @include text(24px, 29px);
+  color: $grey;
+  font-weight: 500;
+}
