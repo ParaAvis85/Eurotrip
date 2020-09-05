@@ -1,8 +1,19 @@
 .tour__title {
   @include text(55px, 80px);
+  position: relative;
   color: $grey;
   font-weight: 600;
   padding-right: 800px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 4px;
+    width: 229px;
+    background-color: $red;
+  }
 }
 
 .tour__text {
