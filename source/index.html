@@ -1,42 +1,276 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Путешествие по Европе</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2">
-</head>
-<body>
-  <header class="main-header">
-    <nav class="main-nav">
-      <a class="main-nav__logo">
-        <picture>
-          <source media="(min-width: 1024px)" srcset="img/sprite/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/sprite/logo-tablet.svg">
-          <img class="main-nav__logo-image" width="44" height="18" src="img/sprite/logo-mobile.svg" srcset="img/sprite/logo-mobile.svg" alt="Логотип Way">
-        </picture>
-      </a>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link">О путешествии</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link">Цены</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="tel:+749978468446">Тел: +7 (499)-784-684-46</a>
-        </li>
-      </ul>
-        <div class="main-nav__wrapper">
-          <h1 class="main-nav__title">Путешествие по Европе</h1>
-          <p class="main-nav__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-          <a class="main-nav__button">смотреть тур</a>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Путешествие по Европе</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2">
+  </head>
+
+  <body>
+    <header class="main-header container">
+      <nav class="main-nav">
+        <a class="main-nav__logo">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/sprite/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/sprite/logo-tablet.svg">
+            <img class="main-nav__logo-image" width="44" height="18" src="img/sprite/logo-mobile.svg" srcset="img/sprite/logo-mobile.svg" alt="Логотип Way">
+          </picture>
+        </a>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--about" href="#tour">О путешествии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--price" href="#price">Цены</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--tel" href="tel:+749978468446">Тел: +7 (499)-784-684-46</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="page-main">
+
+      <section class="promo">
+        <div class="container">
+          <div class="promo__wrapper">
+            <div class="promo__text-wrapper">
+              <h1 class="promo__title">Путешествие по Европе</h1>
+              <p class="promo__text">
+                В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
+                природы.
+              </p>
+              <a class="promo__button button" href="#countries">смотреть тур</a>
+            </div>
+          </div>
         </div>
-    </nav>
-  </header>
-</body>
+      </section>
+
+
+      <section class="tour" id="tour">
+        <h2 class="tour__title">
+          Места посещения
+        </h2>
+        <p class="tour__text">
+          Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
+        </p>
+        <ul class="tour__list">
+          <li class="tour__item">
+            <a class="tour__link-image" href="#" aria-label="карточка выбора страны">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/greece-desktop@1x.webp 1x, img/greece-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/greece-tablet@1x.webp 1x, img/greece-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/greece-mobile@1x.webp 1x, img/greece-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1024px)" srcset="img/greece-desktop@1x.jpg 1x, img/greece-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/greece-tablet@1x.jpg 1x, img/greece-tablet@2x.jpg 2x">
+                <img class="tour__image" src="img/greece-mobile@1x.jpg" srcset="img/greece-mobile@2x.jpg" width="288" height="450" alt="Греция Монастырь Святой Троицы Метеора">
+              </picture>
+              <p class="tour__text-card">Греция</p>
+            </a>
+          </li>
+          <li  class="tour__item">
+            <a class="tour__link-image" href="#" aria-label="карточка выбора страны">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/albany-desktop@1x.webp 1x, img/albany-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/albany-tablet@1x.webp 1x, img/albany-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/albany-mobile@1x.webp 1x, img/albany-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1024px)" srcset="img/albany-desktop@1x.jpg 1x, img/albany-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/albany-tablet@1x.jpg 1x, img/albany-tablet@2x.jpg 2x">
+                <img class="tour__image" src="img/albany-mobile@1x.jpg" srcset="img/albany-mobile@2x.jpg" width="288" height="450" alt="Албания аэрофото  берега моря, причалов с домами">
+              </picture>
+              <p class="tour__text-card">Албания</p>
+            </a>
+          </li>
+          <li  class="tour__item">
+            <a class="tour__link-image" href="#" aria-label="карточка выбора страны">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/macedonia-desktop@1x.webp 1x, img/macedonia-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/macedonia-tablet@1x.webp 1x, img/macedonia-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/macedonia-mobile@1x.webp 1x, img/macedonia-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1024px)" srcset="img/macedonia-desktop@1x.jpg 1x, img/macedonia-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/macedonia-tablet@1x.jpg 1x, img/macedonia-tablet@2x.jpg 2x">
+                <img class="tour__image" src="img/macedonia-mobile@1x.jpg" srcset="img/macedonia-mobile@2x.jpg" width="288" height="450" alt="Македония Церковь Святого Иоанна">
+              </picture>
+              <p class="tour__text-card">Македония</p>
+            </a>
+          </li>
+          <li  class="tour__item">
+            <a class="tour__link-image" href="#" aria-label="карточка выбора страны">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/montenegrin-desktop@1x.webp 1x, img/montenegrin-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/montenegrin-tablet@1x.webp 1x, img/montenegrin-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/montenegrin-mobile@1x.webp 1x, img/montenegrin-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1024px)" srcset="img/montenegrin-desktop@1x.jpg 1x, img/montenegrin-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/montenegrin-tablet@1x.jpg 1x, img/montenegrin-tablet@2x.jpg 2x">
+                <img class="tour__image" src="img/montenegrin-mobile@1x.jpg" srcset="img/montenegrin-mobile@2x.jpg" width="288" height="450" alt="Дурмитор Горный массив в Черногории">
+              </picture>
+              <p class="tour__text-card">Черногория</p>
+            </a>
+          </li>
+          <li  class="tour__item">
+            <a class="tour__link-image" href="#" aria-label="карточка выбора страны">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/croatia-desktop@1x.webp 1x, img/croatia-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/croatia-tablet@1x.webp 1x, img/croatia-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/сroatia-mobile@1x.webp 1x, img/croatia-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1024px)" srcset="img/croatia-desktop@1x.jpg 1x, img/croatia-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/croatia-tablet@1x.jpg 1x, img/croatia-tablet@2x.jpg 2x">
+                <img class="tour__image" src="img/croatia-mobile@1x.jpg" srcset="img/croatia-mobile@2x.jpg" width="288" height="450" alt="Хорватия пещерное озеро с сталактитами сталагмитами">
+              </picture>
+              <p class="tour__text-card">Хорватия</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="about" id="countries">
+        <ul class="about__list">
+          <li class="about__list-item">Греция</li>
+          <li class="about__list-item">Албания</li>
+          <li class="about__list-item">Македония</li>
+          <li class="about__list-item">Черногория</li>
+          <li class="about__list-item">Хорватия</li>
+        </ul>
+        <div class="about__wrapper">
+          <h2 class="about__title">
+            Греция
+          </h2>
+          <p class="about__text">
+            На севере Греции находится один из
+            крупнейших комплексов монастырей,
+            расположенных на вершинах скал. Название
+            его «Метеора» буквально переводится как
+            «висящие в воздухе». Этот монастырь
+            основная цель нашего путешествия в Греции.
+            После покарения скал из песчанника и
+            обломочной горной породы, достигающих
+            в высоту 600 метров, наградой будет
+            неописуемая красота природы и атмосфера,
+            царящая в монастырях Метеоры.
+          </p>
+          <a class="about__link-button">
+            купить тур сейчас
+          </a>
+        </div>
+        <div class="review">
+          <h3 class="review__title">Отзывы</h3>
+            <blockquote class="review__blockquote">
+              <p class="review__description">
+                Метеоры в Греции можно сравнить разве что
+                с Монсерратт в Испании. Такие же
+                высоченные скалы. Но здесь потрясает
+                масштаб. Огромная территория, высоко
+                в горах. Ощущение такое, как будто стоишь на
+                краю света!
+              </p>
+              <cite class="review__cite">Влада Голицина</cite>
+            </blockquote>
+        </div>
+      </section>
+
+
+      <section class="catalog" id="price">
+        <div class="catalog__card">
+          <h2 class="catalog__title">Комплексный</h2>
+            <p class="catalog__price">$1999</p>
+            <p class="catalog__description">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+          <ul class="catalog__list">
+            <li class="catalog__item">Разработанный маршрут с гидом группы</li>
+            <li class="catalog__item">Перелет, трансфер и проживание в отелях</li>
+            <li class="catalog__item">Завтраки, ужины в отелях и ланчи на природе</li>
+            <li class="catalog__item">Экскурсии по удивительно красивым местам Европы</li>
+          </ul>
+        <a class="catalog__button">купить тур сейчас</a>
+        </div>
+
+        <div class="catalog__card">
+          <h2 class="catalog__title">Экономный</h2>
+          <p class="catalog__price">$1399</p>
+          <p class="catalog__description">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+          <ul class="catalog__list">
+            <li class="catalog__item">Разработанный маршрут с гидом группы</li>
+            <li class="catalog__item">Перелет и трансфер</li>
+            <li class="catalog__item">Проживание в хостелах при отелях</li>
+            <li class="catalog__item">Только завтраки в отелях</li>
+            <li class="catalog__item">Экскурсии по удивительно красивым местам Европы</li>
+          </ul>
+        <a class="catalog__button">купить тур сейчас</a>
+        </div>
+
+        <div class="catalog__price-wrapper">
+          <h3 class="catalog__price-title">Цены</h3>
+          <p class="catalog__description">
+            Специально для Вас  мы
+            разработали 2 пакета цен с
+            разными условиями, отталкиваясь
+            от Ваших потребностей и
+            возможностей. Выберите для себя
+            лучший вариант отпуска
+            и отдохните на все 100%!
+          </p>
+          <p class="catalog__description">Свяжитесь с нами</p>
+          <a class="catalog__tel-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <h3 class="page-footer__title">Следующие путешествия</h3>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">Марсель</li>
+          <li class="page-footer__item">Ним</li>
+          <li class="page-footer__item">Монпелье</li>
+          <li class="page-footer__item">Барселона</li>
+          <li class="page-footer__item">Пальма</li>
+        </ul>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">Сардиния</li>
+          <li class="page-footer__item">Палермо</li>
+          <li class="page-footer__item">Катания</li>
+          <li class="page-footer__item">Неаполь</li>
+          <li class="page-footer__item">Рим</li>
+        </ul>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">Корс</li>
+          <li class="page-footer__item">Ницца</li>
+          <li class="page-footer__item">Монако</li>
+          <li class="page-footer__item">Динь-ле-Бен</li>
+          <li class="page-footer__item">Гренобль</li>
+        </ul>
+      </div>
+      <div class="page-footer__wrapper">
+        <h3 class="page-footer__title">Наши контакты</h3>
+        <a class="page-footer__email-link" href="puteshestviemechta@gmail.ru" aria-label="ссылка на почту контакты">puteshestviemechta@gmail.ru</a>
+        <a class="page-footer__tel-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      </div>
+      <div class="page-footer__wrapper">
+        <h3 class="page-footer__title">Корпоративные путешествия</h3>
+        <p class="page-footer__description">
+          Также вы можете заказать индивидуальное
+          путешествие под вашу компанию.
+          Подобные туры очень сближают
+          компанию, помогают поддерживать
+          корпоративный дух, а также являются
+          оличным времяпрепровождением
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,147 @@
+
+.promo {
+  @media (min-width: $desktop-width-min) {
+    background-color: $bg-color;
+    background-image: url("../img/background/greece-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    margin-bottom: 200px;
+    background-size: cover;
+    min-height: 860px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/greece-desktop@2x.jpg");
+    }
+  }
+
+  @media (max-width: $only-tablet-width) {
+    background-color: $bg-color;
+    background-image: url("../img/background/greece-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    min-height: 344px;
+    background-position: center 100%;
+    background-size: cover;
+    margin-bottom: 80px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/greece-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $only-mobile-width) {
+    background-color: $white;
+    background-image: none;
+    margin-bottom: 122px;
+    min-height: none;
+  }
+}
+
+.promo__text-wrapper {
+  width: 470px;
+  padding-top: 187px;
+  margin-left: auto;
+
+  @media (max-width: $only-tablet-width) {
+    padding-top: 58px;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    width: auto;
+  }
+}
+
+.promo__title {
+  @include text(55px, 80px);
+  font-weight: 600;
+  letter-spacing: -1.10667px;
+  color: $white;
+  margin: 0;
+  margin-bottom: 28px;
+
+  @media (min-width: $desktop-width-min) {
+    width: 400px;
+  }
+
+  @media (max-width: $only-tablet-width) {
+    @include text(30px, 45px);
+    letter-spacing: normal;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    @include text(24px, 36px);
+    background-image: url("../img/background/greece-mobile@1x.jpg");
+    min-height: 235px;
+    background-position: center 100%;
+    background-size: cover;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -58px;
+    padding-top: 80px;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 80px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/greece-mobile@2x.jpg");
+    }
+  }
+}
+
+.promo__text {
+  @include text(16px, 27px);
+  font-weight: 400;
+  letter-spacing: -0.466667px;
+  color: $white;
+  width: 385px;
+  margin-bottom: 55px;
+
+  @media (max-width: $only-tablet-width) {
+    @include text(16px, 27px);
+    letter-spacing: -0.466667px;
+    width: 435px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    width: auto;
+    color: $grey;
+    margin-bottom: 27px;
+  }
+}
+
+.promo__button {
+  padding-right: 177px;
+  position: relative;
+
+  @media (max-width: $only-tablet-width) {
+    width: 250px;
+    padding-right: 120px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    width: 288px;
+    padding-right: 150px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    // background-color: green;
+    background-image: url("../img/icon/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 16px;
+    top: 40%;
+    right: 40px;
+
+    @media (max-width: $only-mobile-width) {
+      top: 35%;
+    }
+  }
+}

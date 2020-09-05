@@ -1,0 +1,23 @@
+
+.site-list__item {
+  padding: 20px;
+}
+
+.site-list__link {
+  font-family: $font-main;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $black-tel;
+
+  &--tel {
+    font-size: 18px;
+    line-height: 32px;
+    text-decoration-line: underline;
+    color: $red;
+  }
+
+  &:hover {
+    color: $red;
+  }
+}
