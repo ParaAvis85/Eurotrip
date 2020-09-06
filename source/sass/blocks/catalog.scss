@@ -52,3 +52,29 @@
   font-weight: normal;
   color: $grey;
 }
+
+.catalog__price-title {
+  @include text(55px, 90px);
+  font-weight: 600;
+
+  color: $grey;
+}
+
+.catalog__description-text {
+  @include text(16px, 28px);
+  font-weight: normal;
+
+  color: $black-70;
+}
+
+.catalog__description-connect {
+  @include text(22px, 34px);
+  font-weight: 500;
+  color: $black-tel;
+}
+
+.catalog__tel-link {
+  @include text(20px, 32px);
+  font-weight: normal;
+  color: $black;
+}
