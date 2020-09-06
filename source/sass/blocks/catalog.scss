@@ -1,0 +1,54 @@
+.catalog__card {
+  &--complex {
+    border: 3px solid $red;
+    border-radius: 6px;
+  }
+
+  &--economy {
+    border: 1px solid $grey-30;
+    border-radius: 6px;
+  }
+}
+
+.catalog__list {
+  @include no-list();
+}
+
+.catalog__title {
+  @include text(28px, 34px);
+  font-weight: 600;
+
+  &--complex {
+    color: $red;
+  }
+
+  &--economy {
+    @include text(28px, 38px);
+    color: $economy;
+  }
+}
+
+.catalog__price {
+  @include text(25px ,34px);
+  font-weight: 600;
+
+  &--complex {
+    color: $red;
+  }
+
+  &--economy {
+    color: $economy;
+  }
+}
+
+.catalog__description {
+  @include text(16px, 24px);
+  font-weight: normal;
+  color: $grey;
+}
+
+.catalog__item {
+  @include text(16px, 32px);
+  font-weight: normal;
+  color: $grey;
+}
