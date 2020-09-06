@@ -1,4 +1,12 @@
+.catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog__card {
+  width: 370px;
+  min-height: 670px;
+
   &--complex {
     border: 3px solid $red;
     border-radius: 6px;
@@ -10,8 +18,19 @@
   }
 }
 
+.catalog__card-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
 .catalog__list {
   @include no-list();
+
+  margin-bottom: 57px;
+
+  &--complex {
+    margin-bottom: 75px;
+  }
 }
 
 .catalog__title {
@@ -45,12 +64,24 @@
   @include text(16px, 24px);
   font-weight: normal;
   color: $grey;
+
+  padding-left: 28px;
+  padding-right: 52px;
 }
 
 .catalog__item {
   @include text(16px, 32px);
   font-weight: normal;
   color: $grey;
+
+  margin-bottom: 20px;
+  padding-left: 45px;
+  padding-right: 40px;
+}
+
+.catalog__button {
+  display: inline-flex;
+  margin-left: 50px;
 }
 
 .catalog__price-title {
@@ -77,4 +108,9 @@
   @include text(20px, 32px);
   font-weight: normal;
   color: $black;
+}
+
+.catalog__price-wrapper {
+  width: 350px;
+  padding-left: 55px;
 }
