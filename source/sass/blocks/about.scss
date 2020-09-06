@@ -1,4 +1,6 @@
-
+.about {
+  position: relative;
+}
 
 .about__list {
   @include no-list();
