@@ -1,3 +1,4 @@
+@import "global/normalize.scss";
 @import "global/variabless.scss";
 @import "global/fonts.scss";
 @import "global/mixins.scss";
@@ -8,3 +9,10 @@
 @import "blocks/main-header.scss";
 @import "blocks/site-list.scss";
 @import "blocks/promo.scss";
+@import "blocks/tour.scss";
+@import "blocks/about.scss";
+@import "blocks/review.scss";
+@import "blocks/catalog.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/feedback.scss";
+@import "blocks/form.scss";

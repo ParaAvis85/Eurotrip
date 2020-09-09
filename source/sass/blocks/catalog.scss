@@ -1,0 +1,116 @@
+.catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__card {
+  width: 370px;
+  min-height: 670px;
+
+  &--complex {
+    border: 3px solid $red;
+    border-radius: 6px;
+  }
+
+  &--economy {
+    border: 1px solid $grey-30;
+    border-radius: 6px;
+  }
+}
+
+.catalog__card-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.catalog__list {
+  @include no-list();
+
+  margin-bottom: 57px;
+
+  &--complex {
+    margin-bottom: 75px;
+  }
+}
+
+.catalog__title {
+  @include text(28px, 34px);
+  font-weight: 600;
+
+  &--complex {
+    color: $red;
+  }
+
+  &--economy {
+    @include text(28px, 38px);
+    color: $economy;
+  }
+}
+
+.catalog__price {
+  @include text(25px ,34px);
+  font-weight: 600;
+
+  &--complex {
+    color: $red;
+  }
+
+  &--economy {
+    color: $economy;
+  }
+}
+
+.catalog__description {
+  @include text(16px, 24px);
+  font-weight: normal;
+  color: $grey;
+
+  padding-left: 28px;
+  padding-right: 52px;
+}
+
+.catalog__item {
+  @include text(16px, 32px);
+  font-weight: normal;
+  color: $grey;
+
+  margin-bottom: 20px;
+  padding-left: 45px;
+  padding-right: 40px;
+}
+
+.catalog__button {
+  display: inline-flex;
+  margin-left: 50px;
+}
+
+.catalog__price-title {
+  @include text(55px, 90px);
+  font-weight: 600;
+
+  color: $grey;
+}
+
+.catalog__description-text {
+  @include text(16px, 28px);
+  font-weight: normal;
+
+  color: $black-70;
+}
+
+.catalog__description-connect {
+  @include text(22px, 34px);
+  font-weight: 500;
+  color: $black-tel;
+}
+
+.catalog__tel-link {
+  @include text(20px, 32px);
+  font-weight: normal;
+  color: $black;
+}
+
+.catalog__price-wrapper {
+  width: 350px;
+  padding-left: 55px;
+}

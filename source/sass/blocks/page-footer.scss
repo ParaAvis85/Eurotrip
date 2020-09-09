@@ -1,0 +1,18 @@
+.page-footer {
+  display: flex;
+}
+
+.page-footer__list {
+  @include no-list();
+  display: flex;
+}
+
+.page-footer__link {
+  @include text(14px, 17px);
+  font-weight: normal;
+  color: $footer-country;
+}
+
+.page-footer__wrapper {
+  width: 390px;
+}

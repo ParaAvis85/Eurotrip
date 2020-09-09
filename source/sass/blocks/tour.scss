@@ -1,0 +1,54 @@
+.tour__title {
+  @include text(55px, 80px);
+  position: relative;
+  color: $grey;
+  font-weight: 600;
+  padding-right: 800px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 4px;
+    width: 229px;
+    background-color: $red;
+  }
+}
+
+.tour__text {
+  @include text(16px, 28px);
+  color: $black-70;
+  font-weight: 600;
+  padding-right: 800px;
+}
+
+.tour__list {
+  @include no-list();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tour__item {
+  position: relative;
+}
+
+.tour__image {
+  width: 350px;
+  height: 430px;
+}
+
+.tour__text-card {
+  @include text(24px, 29px);
+  color: $grey;
+  font-weight: 500;
+  position: absolute;
+  height: 61px;
+  width: 215px;
+  padding-top: 20px;
+  top: 345px;
+  left: 65px;
+  background-color: $white;
+  text-align: center;
+}

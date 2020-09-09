@@ -1,0 +1,51 @@
+.about {
+  position: relative;
+  margin-bottom: 240px;
+}
+
+.about__list {
+  @include no-list();
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.about__list-link {
+  @include text(20px, 24px);
+  color: $grey-30;
+  font-weight: 500;
+  letter-spacing: -0.415px;
+
+  &--active {
+    color: $red;
+  }
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.about__wrapper {
+  background-image: url("../img/background/greece-desktop-promo@1x.jpg");
+  background-size: 430px 596px;
+  background-repeat: no-repeat;
+  width: 900px;
+  min-height: 600px;
+  background-position-x: right;
+}
+
+.about__title {
+  @include text(55px, 90px);
+  font-weight: 600;
+  color: $grey;
+  letter-spacing: -1.245px;
+}
+
+.about__text {
+  @include text(16px, 28px);
+  font-weight: normal;
+  color: $black-70;
+  letter-spacing: -0.466667px;
+  padding-right: 575px;
+  padding-bottom: 60px;
+}
