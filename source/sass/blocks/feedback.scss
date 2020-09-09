@@ -1,0 +1,37 @@
+.feedback__wrapper {
+  padding-top: 150px;
+  margin-right: -12px;
+  background-image: url("../img/background/sea-desktop-about@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 12px 35%;
+  padding-bottom: 220px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background/sea-desktop-about@2x.jpg");
+    background-size: 844px auto;
+  }
+
+  @media (max-width: $only-tablet-width) {
+    background-image: url("../img/background/sea-tablet@1x.jpg");
+    margin-right: -20px;
+    margin-left: -20px;
+    background-position: 0 35%;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 75px;
+    margin-bottom: 64px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/sea-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $only-mobile-width) {
+    background-image: none;
+    padding-top: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 0;
+    padding-bottom: 72px;
+  }
+}

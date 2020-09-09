@@ -1,0 +1,169 @@
+.form {
+  width: 656px;
+  background-color: $white;
+  padding: 50px;
+  margin-left: auto;
+  box-shadow: 0 4px 30px $shadow;
+
+  @media (max-width: $only-tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    width: 100%;
+    padding-top: 52px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+
+    background-color: $bg-color-form;
+    box-shadow: 0 0 0;
+  }
+
+  &--popup {
+    width: 390px;
+    height: 100%;
+    box-shadow: 0 0 0;
+    background-color: $bg-color-form;
+    padding-top: 100px;
+
+    @media (max-width: $only-mobile-width) {
+      width: 290px;
+    }
+  }
+}
+
+.form__title {
+  @include text(25px, 32px);
+  font-weight: 600;
+  text-align: center;
+  color: $grey;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (max-width: $only-mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__text {
+  @include text(16px, 24px);
+  font-weight: 400;
+  text-align: center;
+  color: $grey;
+  margin-top: 0;
+  margin-bottom: 23px;
+
+  @media (max-width: $only-mobile-width) {
+    margin-bottom: 19px;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  @media (max-width: $only-tablet-width) {
+    margin-bottom: 19px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  &--popup {
+    flex-direction: column;
+  }
+}
+
+.form__input {
+  height: 50px;
+  padding: 15px;
+  width: 270px;
+  border: 1px solid $grey-30;
+
+  @media (max-width: $only-mobile-width) {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &::placeholder {
+    @include text(14px, 17px);
+    font-weight: 400;
+    color: $grey;
+    background-color: inherit;
+    opacity: 1;
+  }
+}
+
+.form__input--phone {
+  padding-left: 49px;
+}
+
+.form__input--error {
+  border: 1px solid $red;
+  position: relative;
+
+  &::before {
+    @include text(12px, 15px);
+    font-family: $font-main;
+    font-weight: 400;
+    position: absolute;
+    content: "Данные не верны";
+    top: 0;
+    left: 0;
+    max-width: 80%;
+  }
+}
+
+.form__label {
+  @media (max-width: $only-mobile-width) {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &--popup {
+    margin-bottom: 20px;
+  }
+}
+
+.form__label--phone {
+  position: relative;
+
+  &::after {
+    @include text(14px, 17px);
+    position: absolute;
+    content: "+7";
+    color: $grey;
+    font-family: $font-main;
+    font-weight: 400;
+    top: 18px;
+    left: 26px;
+  }
+
+  &::before {
+    @include text(14px, 17px);
+    position: absolute;
+    content: "*";
+    color: $red;
+    font-family: $font-main;
+    font-weight: 400;
+    top: 10px;
+    left: 15px;
+  }
+}
+
+.form__button {
+  display: block;
+  padding: 18px 40px;
+  margin: 0 auto;
+
+  &--popup {
+    width: 176px;
+    min-width: 176px;
+  }
+}
